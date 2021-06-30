@@ -1,5 +1,5 @@
 {
-  "name": "SerendiaSquadDestek",
+  "name": "Fix",
   "version": "0.0.1",
   "description": "Kategorili Destek Altyapısı",
   "main": "shawty.js",
@@ -18,11 +18,11 @@
     "node": "12.x"
   },
   "repository": {
-    "url": "https://pixapgames.com"
+    "url": "https://emirhanakpinar.com.tr"
   },
   "license": "MIT",
   "keywords": [
-    "Serendia",
+    "Emirhan",
     "EmirhaaN#1938"
   ]
 }
