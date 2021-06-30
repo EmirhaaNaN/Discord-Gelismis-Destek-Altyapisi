@@ -49,30 +49,22 @@ client.on("message", message => {
 });
 
 client.on("ready", async () => {
-  console.log(`SerendiaSquad 💖 | Bütün komutlar başarıyla yüklendi!`);
+  console.log(`emirhanakpinar.com.tr | Bütün komutlar başarıyla yüklendi!`);
   client.user.setStatus(client.conf.durum);
   setInterval(function() {
     let destekno = db.fetch("desteknumara");
     var oyun = [
-      `SerendiaSquad 💖 Emirhan`,
-      `SerendiaSquad 💖 Yashinu`,
-      `SerendiaSquad 💖 Emirhan`,
-      `SerendiaSquad 💖 Alosha`,
-      `SerendiaSquad 💖 Emirhan`,
-      `SerendiaSquad 💖 Talha`,
-      `SerendiaSquad 💖 Piece`,
-      `SerendiaSquad 💖 Sude`,
-      `SerendiaSquad 💖 Batros`
+      `emirhanakpinar.com.tr`
     ];
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
     client.user.setActivity(oyun[random]);
   }, 2 * 2500);
 
-  console.log(`SerendiaSquad 💖 | Bot AKTİF!`);
+  console.log(`emirhanakpinar.com.tr | Bot AKTİF!`);
 });
 
 const log = message => {
-  console.log(`SerendiaSquad 💖 | ${message}`);
+  console.log(`emirhanakpinar.com.tr | ${message}`);
 };
 
 client.commands = new Discord.Collection();
@@ -80,7 +72,7 @@ client.aliases = new Discord.Collection();
 fs.readdir("./komutlar/", (err, files) => {
   if (err) console.error(err);
   log(
-    `SerendiaSquad 💖 | ${files.length} adet komut yüklenmeye hazır. Başlatılıyor...`
+    `emirhanakpinar.com.tr | ${files.length} adet komut yüklenmeye hazır. Başlatılıyor...`
   );
   files.forEach(f => {
     let props = require(`./komutlar/${f}`);
@@ -219,11 +211,11 @@ client.on("message", async msg => {
             )
             .setColor("RED")
             .addField(
-              `**SerendiaSquad 💖 **`,
+              `**emirhanakpinar.com.tr **`,
               `Destek sistemimizi kullanarak bizimle iletişime geçtiğin için teşekkür ederiz! | *Kategori Mesajı Felan*`
             )
             .setFooter(
-              `Destek Sistemi | SerendiaSquad 💖`,
+              `Destek Sistemi | emirhanakpinar.com.tr`,
               client.user.avatarURL()
             )
             .setTimestamp();
@@ -277,7 +269,7 @@ client.on("message", async msg => {
                 .addField(`» Kullanıcı:`, msg.author, true)
                 .addField(`» Talep Konusu/Sebebi:`, msg.content, true)
                 .setFooter(
-                  `Destek Sistemi | SerendiaSquad 💖`,
+                  `Destek Sistemi | emirhanakpinar.com.tr`,
                   client.user.avatarURL()
                 )
                 .setTimestamp();
@@ -329,7 +321,7 @@ client.on("message", async msg => {
                 .addField(`» Kullanıcı:`, msg.author, true)
                 .addField(`» Talep Konusu/Sebebi:`, msg.content, true)
                 .setFooter(
-                  `Destek Sistemi | SerendiaSquad 💖`,
+                  `Destek Sistemi | emirhanakpinar.com.tr`,
                   client.user.avatarURL()
                 )
                 .setTimestamp();
@@ -381,7 +373,7 @@ client.on("message", async msg => {
                 .addField(`» Kullanıcı:`, msg.author, true)
                 .addField(`» Talep Konusu/Sebebi:`, msg.content, true)
                 .setFooter(
-                  `Destek Sistemi | SerendiaSquad 💖`,
+                  `Destek Sistemi | emirhanakpinar.com.tr`,
                   client.user.avatarURL()
                 )
                 .setTimestamp();
@@ -433,7 +425,7 @@ client.on("message", async msg => {
                 .addField(`» Kullanıcı:`, msg.author, true)
                 .addField(`» Talep Konusu/Sebebi:`, msg.content, true)
                 .setFooter(
-                  `Destek Sistemi | SerendiaSquad 💖`,
+                  `Destek Sistemi | emirhanakpinar.com.tr`,
                   client.user.avatarURL()
                 )
                 .setTimestamp();
